@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rádio Paralelo</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            color: #fff;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            gap: 10px; /* Reduced gap */
+            padding: 0;
+            overflow: auto; /* Allow scrolling */
+        }
+
+        /* Header */
+        h1 {
+            font-size: 55px;
+            margin: 5px 0;
+            text-shadow: 3px 3px #ff00ff;
+        }
+        h3 {
+            font-size: 22px;
+            margin: 5px 0;
+        }
+
+        /* Audio Player */
+        audio {
+            width: 250px; /* Adjusted to fit on screen */
+            margin: 10px 0;
+            border: 2px solid #ff00ff; /* Square border */
+        }
+
+        /* Image */
+        img {
+            width: 260px;
+            margin: 5px 0;
+        }
+
+        /* Divider Symbol */
+        .divider {
+            font-size: 32px;
+            margin: 5px 0;
+        }
+
+        /* Link Styles */
+        .links, .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Tighter spacing */
+            margin: 10px 0;
+        }
+
+        /* Individual Link Style */
+        .link-item, .livestream-link, .social-link {
+            color: #ff00ff;
+            font-size: 18px; /* Slightly smaller font */
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+        .link-item:hover, .livestream-link:hover, .social-link:hover {
+            color: #00ff00;
+        }
+
+        /* Livestream Info */
+        .livestream-info {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        /* Social Icons */
+        .social-link {
+            font-size: 24px;
+        }
+
+        /* Footer */
+        footer {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rádio Paralelo</h1>
+    <h3>A partir montras desde 2016!</h3>
+
+    <audio controls>
+        <source src="https://radio.indymedia.pt:8443/main.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <img src="https://indymedia.pt/wp-content/uploads/2023/11/VJLoop-Radio-Paralelo.gif" alt="Rádio Paralelo GIF">
+    
+    <div class="divider">⋆.˚✮🎧✮˚.⋆</div>
+
+    <!-- Links -->
+    <div class="links">
+        <a class="link-item" href="https://radio.indymedia.pt:8443/main.ogg">OGG</a>
+        <a class="link-item" href="https://cloud.disroot.org/s/qkaY9KKmtkDZ4Qx/download/paralelo.xspf">XSPF</a>
+        <a class="link-item" href="https://cloud.disroot.org/s/gtoMH4fRxbSDNJF/download/paralelo.m3u">M3U</a>
+        <a class="link-item" href="https://cloud.disroot.org/s/Xqigtrj8wpAwLtc/download/paralelo.pls">PLS</a>
+    </div>
+
+    <!-- Livestream Info -->
+    <div class="livestream-info">
+        <p>
+            <a class="livestream-link" href="https://escrever.coletivos.org/s/docs-radioparalelo#">Manual para Livestream</a> (<a class="livestream-link" href="https://libretime.org/docs/user-manual/live-broadcast/">Docs</a>)
+        </p>
+        <p>
+            <a class="livestream-link" href="https://indymedia.pt/radio-paralelo/">Página Web</a> | 
+            <a class="livestream-link" href="https://radio.indymedia.pt">Estúdio</a>
+        </p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+        <a class="social-link" href="https://rss.zdx.fr/api/query.php?user=radioparalelo&t=bc598c7f195190354da8e14fc0686fac&f=rss">🛜</a>
+        <a class="social-link" href="https://kolektiva.social/@paralelo">🐘</a>
+        <a class="social-link" href="https://t.me/s/radioparalelo">📲</a>
+        <a class="social-link" href="https://archive.org/details/@r_dio_paralelo_porto">🏛️</a>
+        <a class="social-link" href="https://www.facebook.com/RadioParalelo">📘</a>
+        <a class="social-link" href="https://www.instagram.com/radioparalelo/">📸</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>🄯 Rádio Paralelo</p>
+    </footer>
+</body>
+</html>
